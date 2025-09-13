@@ -7,7 +7,7 @@ public class Popup : MonoBehaviour
     protected System.Action actionClose = null;
 
 
-    protected virtual void void OnDestroy()
+    protected virtual void OnDestroy()
     {
         actionClose?.Invoke();
     }
